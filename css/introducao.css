@@ -1,11 +1,11 @@
 .introducao {
+  align-items: center;
   max-width: 75rem;
   padding: 2.5rem 1.25rem;
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 2fr;
   gap: 6.25rem;
-  align-items: center;
 }
 
 .introducao h1 {
@@ -33,8 +33,13 @@
 }
 
 @media (max-width: 900px) {
+  .perfil {
+    max-width: 253px;
+  }
+
   .introducao {
     grid-template-columns: 1fr 1fr;
+    gap: 0.25rem;
   }
 
   .introducao h1 {
@@ -50,12 +55,6 @@
 
   .introducao p {
     font-size: 3rem;
-  }
-}
-
-@media (max-width: 800px) {
-  .introducao {
-    grid-template-columns: 1fr 1fr;
   }
 }
 
