@@ -5,15 +5,28 @@
 
 .formacao-container {
   max-width: 75rem; /* 1200px */
-  padding: 2.5rem 1.25rem; /* +- 40px 20px */
+  padding: 7.5rem 1.25rem; /* +- 120px 20px */
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 2fr;
   gap: 100px;
+  position: relative;
+}
+
+.formacao-container::after {
+  content: '';
+  display: block;
+  width: 130px;
+  height: 100px;
+  background: url(../img/detalhe.svg) no-repeat center;
+  position: absolute;
+  bottom: -50px;
+  left: 20px;
 }
 
 .formacao .subtitulo {
   color: #000000;
+  max-width: 6ch;
 }
 
 .formacao-texto {
@@ -103,4 +116,41 @@
 
 .idiomas h3::before {
   background: url('../img/idiomas.svg') no-repeat center center;
+}
+
+.formacao-extra li {
+  font-size: 1.125rem;
+  line-height: 1.1;
+  margin-bottom: 20px;
+}
+
+.formacao-extra span {
+  color: #8f8f8f;
+}
+
+.cursos li {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (max-width: 800px) {
+  .formacao-container {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    padding: 60px 20px;
+  }
+
+  .formacao .subtitulo {
+    color: #ffffff;
+  }
+
+  .formacao-texto {
+    font-size: 1.25rem;
+  }
+
+  .formacao-extra h3::before {
+    position: initial;
+    margin-bottom: 10px;
+  }
+
 }
