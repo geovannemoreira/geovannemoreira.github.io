@@ -1,9 +1,9 @@
-.formacao {
+.informacao {
   background-color: #141414;
   color: aliceblue;
 }
 
-.formacao-container {
+.informacao-container {
   max-width: 75rem; /* 1200px */
   padding: 7.5rem 1.25rem; /* +- 120px 20px */
   margin: 0 auto;
@@ -13,7 +13,7 @@
   position: relative;
 }
 
-.formacao-container::after {
+.informacao-container::after {
   content: '';
   display: block;
   width: 130px;
@@ -24,12 +24,12 @@
   left: 20px;
 }
 
-.formacao .subtitulo {
+.informacao .subtitulo {
   color: #000000;
   max-width: 6ch;
 }
 
-.formacao-texto {
+.informacao-texto {
   font-size: 1.5rem;
   line-height: 1.33;
   max-width: 40ch;
@@ -37,18 +37,18 @@
   color: #a3a3a3;
 }
 
-.formacao-texto strong {
+.informacao-texto strong {
   color: #ffffff;
 }
 
-.faculdade-lista {
+.skills-lista {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
   margin-bottom: 60px;
 }
 
-.faculdade {
+.skills {
   flex: 1;
   background-color: #000000;
   padding: 20px;
@@ -57,14 +57,14 @@
   flex-direction: column;
 }
 
-.faculdade-tipo {
+.skills-tipo {
   font-size: 0.875rem;
   text-transform: uppercase;
   color: #a3a3a3;
   margin-bottom: 10px;
 }
 
-.faculdade-curso {
+.skills-curso {
   flex: 1;
   font-size: 1.125rem;
   line-height: 1.4;
@@ -72,7 +72,7 @@
   position: relative;
 }
 
-.faculdade-curso::before {
+.skills-curso::before {
   content: '';
   display: block;
   width: 4px;
@@ -82,7 +82,7 @@
   left: -24px;
 }
 
-.faculdade-instituicao {
+.skills-nivel {
   font-size: 1.125rem;
   color: #a3a3a3;
 }
@@ -91,7 +91,7 @@
   margin-bottom: 60px;
 }
 
-.formacao-extra h3 {
+.informacao-extra h3 {
   font-size: 0.875rem;
   line-height: 1.4;
   color: #8f8f8f;
@@ -100,7 +100,7 @@
   position: relative;
 }
 
-.formacao-extra h3::before {
+.informacao-extra h3::before {
   display: block;
   content: '';
   width: 24px;
@@ -118,13 +118,13 @@
   background: url('../img/idiomas.svg') no-repeat center center;
 }
 
-.formacao-extra li {
+.informacao-extra li {
   font-size: 1.125rem;
   line-height: 1.1;
   margin-bottom: 20px;
 }
 
-.formacao-extra span {
+.informacao-extra span {
   color: #8f8f8f;
 }
 
@@ -134,21 +134,21 @@
 }
 
 @media (max-width: 800px) {
-  .formacao-container {
+  .informacao-container {
     grid-template-columns: 1fr;
     gap: 40px;
     padding: 60px 20px;
   }
 
-  .formacao .subtitulo {
+  .informacao .subtitulo {
     color: #ffffff;
   }
 
-  .formacao-texto {
+  .informacao-texto {
     font-size: 1.25rem;
   }
 
-  .formacao-extra h3::before {
+  .informacao-extra h3::before {
     position: initial;
     margin-bottom: 10px;
   }

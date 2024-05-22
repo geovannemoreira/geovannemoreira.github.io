@@ -2,7 +2,7 @@ body {
   margin: 0px;
   font-family: 'Fira Sans', Arial, sans-serif;
   color: #141414;
-  margin-bottom: 1000px;
+  background-color:#fdd0 ;
 }
 
 h1,
@@ -20,6 +20,7 @@ ul {
 
 img {
   max-width: 100%;
+  height: auto;
   display: block;
 }
 
