@@ -37,7 +37,17 @@
   text-decoration: none;
 }
 
+.redes-sociais{
+display: flex;
+justify-content: start;
+}
 
+.instagram, .linkedin{
+  max-width: 5px;
+  min-width: 50px;
+  margin-right: 15px;
+
+}
 
 .footer-copy {
   grid-column: 1 / -1;
